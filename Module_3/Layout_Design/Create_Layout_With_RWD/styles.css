@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Palatino Linotype";
+}
+
+#head {
+    background-color: rgba(16, 14, 14, 0.93);
+    height: 60px;
+    align-content: center;
+}
+
+#head ul li {
+    list-style: none;
+    display: inline-block;
+    color: rgba(213, 212, 212, 0.74);
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 20px;
+    width: 90px;
+    padding-left: 16px;
+}
+
+#head ul li:hover {
+    background-color: black;
+    color: white;
+    height: 60px;
+    align-content: center;
+    width: 90px;
+    padding-left: 16px;
+}
+
+#sidebar1 {
+    width: 20%;
+    float: left;
+    background-color: #cccccc;
+    height: 81.3vh;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+#sidebar1 ul li {
+    margin-top: 20px;
+}
+
+#sidebar1 a {
+    text-decoration: none;
+    color: blue;
+}
+
+#sidebar1 a:hover {
+    color: red;
+}
+
+#sidebar1 a:active {
+    color: yellow;
+}
+
+#sidebar2 {
+    float: left;
+    width: 20%;
+    background-color: #cccccc;
+    height: 81.3vh;
+}
+
+#sidebar2 #ads1 {
+    margin: 25px;
+    background-color: #ededed;
+    width: 83%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+#sidebar2 #ads2 {
+    margin: 25px;
+    background-color: #ededed;
+    width: 83%;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+#content {
+    float: left;
+    width: 60%;
+}
+
+#content h1 {
+    margin: 10px;
+}
+
+#content h2 {
+    margin: 12px;
+}
+
+#content p {
+    margin: 15px;
+    text-align: justify;
+}
+
+#content hr {
+    margin: 15px;
+}
+
+#foot {
+    clear: both;
+    background-color: #3a3a3a;
+    height: 60px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}

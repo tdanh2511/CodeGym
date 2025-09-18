@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: "Palatino Linotype";
+    background-color: #18191a;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #242526;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+/* Menu chính */
+#header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+/* Logo Facebook */
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #3A3B3C;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+.search-box i {
+    color: #B0B3B8;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#search {
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    height: 30px;
+    width: 250px;
+}
+
+#icons1, #icons2, #icons3, #icons4, #icons5 {
+    font-size: 30px;
+    color: #B0B3B8;
+    margin-left: 75px;
+}
+
+#icons6, #icons7, #icons8, #icons9 {
+    color: #B0B3B8;
+    position: relative;
+    left: 250px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    padding-top: 60px;
+    color: #e4e6eb;
+}
+
+#sidebar1 {
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    border-right: 1px solid #3a3b3c;
+    overflow-y: auto;
+    background-color: #18191a;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu li, .shortcut li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.menu li img, .shortcut li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu li a {
+    color: #e4e6eb;
+    text-decoration: none;
+}
+
+.menu li i {
+    margin-right: 10px;
+}
+
+.shortcut h3 {
+    margin: 20px 0 10px;
+    font-size: 16px;
+}
+
+/* Nội dung chính */
+#content {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #18191a;
+}
+
+#content-title {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding-left: 20px;
+    height: 40px;
+    background-color: #3A3B3C;
+}
+
+.tabs {
+    display: block;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 15px;
+    background-color: #3a3b3c;
+    border: none;
+    border-radius: 10px;
+    color: #e4e6eb;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 250px;
+}
+
+.stories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.story {
+    width: 100px;
+    height: 150px;
+    background-color: #3a3b3c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sidebar2 {
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    border-left: 1px solid #3a3b3c;
+    overflow-y: auto;
+    background-color: #18191a;
+}
+
+#sidebar2 h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.ad {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ad img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.contacts li img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

@@ -1,0 +1,70 @@
+/* admin-login.css */
+
+body {
+    background-color: #cccccc; /* nền trắng */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b22222; /* đỏ cháy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    border: 2px solid #b22222; /* viền đỏ */
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 0 15px rgba(178, 34, 34, 0.3);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #b22222;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #000000;
+    opacity: 0.6;
+}
+
+input[type="submit"] {
+    background-color: #b22222;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b1a1a;
+}
+
+.error-message {
+    color: #b22222;
+    font-weight: 600;
+    margin-top: 15px;
+}

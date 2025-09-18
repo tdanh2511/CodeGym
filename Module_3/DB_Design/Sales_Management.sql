@@ -1,0 +1,40 @@
+CREATE DATABASE QLBH;
+USE QLBH;
+
+CREATE TABLE Customer (
+    cID VARCHAR(10) PRIMARY KEY,
+    cName NVARCHAR(50) NOT NULL,
+    cAge INT
+);
+
+CREATE TABLE `Order` (
+    oID VARCHAR(10) PRIMARY KEY,
+    cID VARCHAR(10) NOT NULL,
+    oDate DATE,
+    oTotalPrice INT,
+    CONSTRAINT FK_C_O FOREIGN KEY (cID) REFERENCES Customer(cID)
+);
+
+CREATE TABLE Product (
+    pID VARCHAR(10) PRIMARY KEY,
+    pName NVARCHAR(50) NOT NULL,
+    pPrice INT
+);
+
+CREATE TABLE OrderDetail (
+    oID VARCHAR(10),
+    pID VARCHAR(10),
+    odQTY INT,
+    PRIMARY KEY (oID, pID),
+    CONSTRAINT FK_O_OD FOREIGN KEY (oID) REFERENCES `Order`(oID),
+    CONSTRAINT FK_P_OD FOREIGN KEY (pID) REFERENCES Product(pID)
+);
+
+
+
+
+
+
+
+
+
